@@ -1,0 +1,40 @@
+.TaskWrapper {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.TaskWrapper span {
+  position: absolute;
+  right: -30px;
+  top: 10px;
+  font-size: 25px;
+  color: #F55A2A;
+  transition: right 0.4s ease-out;
+}
+
+.deletePostShow {
+  right: 10px !important;
+  transition: right 0.4s ease-out;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+}
+
+.Task {
+  display: inline-block;
+  font-size: 18px;
+  color: #434343;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.TaskSelected {
+  background: #f0f0f0;
+}

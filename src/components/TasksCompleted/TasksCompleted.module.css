@@ -1,0 +1,34 @@
+.TasksCompleted {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.TasksCompleted p {
+  font-size: 18px;
+  color: #6A6A6A;
+  border-bottom: 1px solid #DFDFDF;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.TasksCompleted span {
+  color: #F55A2A;
+  font-size: 22px;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  cursor: pointer;
+}
+
+.TasksCompletedList {
+  width: 100%;
+}
+
+.taskCompleted {
+  text-decoration-line: line-through;
+  font-size: 18px;
+  color: #707070;
+  margin-bottom: 5px;
+}

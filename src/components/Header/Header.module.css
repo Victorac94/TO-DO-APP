@@ -1,0 +1,12 @@
+.Header {
+  width: 100%;
+  padding: 30px;
+  background-color: #3A8FFF;
+}
+
+.Header p {
+  text-align: left;
+  margin: 0;
+  color: white;
+  font-size: 26px;
+}

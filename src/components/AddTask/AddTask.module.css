@@ -1,0 +1,55 @@
+.AddTask {
+  width: 100%;
+  position: relative;
+}
+
+.AddTask__form {
+  width: 70%;
+  padding: 20px;
+}
+
+.AddTask__form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #A5A5A5;
+  color: #434343;
+  font-size: 18px;
+  padding-left: 7px;
+  padding-bottom: 2px;
+}
+
+.AddTask__form input::placeholder {
+  color: #C8C8C8;
+}
+
+.AddTask__button {
+  position: absolute;
+  top: -25px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  background-color: #54DC5D;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(70, 70, 70, 0.4);
+}
+
+.AddTask__button__vertical {
+  width: 3px;
+  height: 34px;
+  background-color: white;
+  position: absolute;
+  top: 8px;
+  left: 24px;
+}
+
+.AddTask__button__horizontal {
+  width: 34px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: 24px;
+  left: 8px;
+}

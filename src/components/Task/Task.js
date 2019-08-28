@@ -21,7 +21,7 @@ const task = (props) => {
         span.classList.add(classes.deletePostShow);
         isSelected = true;
       }
-    }, 300) //300 milliseconds
+    }, 200) //300 milliseconds
   }
 
   const handleTaskRelease = () => {

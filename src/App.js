@@ -4,26 +4,49 @@ import './App.css';
 import Header from './components/Header/Header';
 import AddTask from './components/AddTask/AddTask';
 import Task from './components/Task/Task';
+import TasksList from './components/TasksList/TasksList';
 import TasksCompleted from './components/TasksCompleted/TasksCompleted';
 
 class App extends Component {
   state = {
-    tasks: [],
-    tasksCompleted: []
+    tasks: [
+      {
+        "value": "Buy tomatoes",
+        "key": "Buy tomatoes0.2347"
+    },
+    {
+      "value": "Go for a walk",
+      "key": "Go for a walk0.9878"
+    }
+    ],
+    tasksCompleted: [
+      {
+        "value": "Have breakfast",
+        "key": "Have breakfast0.2345"
+      },
+      {
+        "value": "Take a shower",
+        "key": "Take a shower0.6423"
+      }
+    ]
   }
 
   addTask = (e) => {
     let input = document.querySelector("form input");
     const form = document.querySelector("form");
     const tasksCopy = [...this.state.tasks];
+    const value = input.value;
 
     //Prevent 'sending' the form
     if (e.target === form) {
       e.preventDefault();
     }
-    //Get the input value and create the new task
-    const value = input.value;
+    //Check the task is not empty
+    if (value.trim() === "") return;
+
+    //Create the new task
     const newTask = {"value": value, "key": value + Math.random().toFixed(4)};
+
     //Add task to state array
     tasksCopy.push(newTask);
 
@@ -115,7 +138,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <AddTask onAddTask={(e) => this.addTask(e)}/>
-        {tasks}
+        <TasksList tasks={tasks} />
         <TasksCompleted
         tasksCompleted={this.state.tasksCompleted}
         deleteTasksCompleted={this.deleteCompleted}/>

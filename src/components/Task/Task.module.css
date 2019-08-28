@@ -13,18 +13,17 @@
   right: -30px;
   top: 10px;
   font-size: 25px;
-  color: #F55A2A;
-  transition: right 0.4s ease-out;
 }
 
 .deletePostShow {
   right: 10px !important;
-  transition: right 0.4s ease-out;
 }
 
 .checkbox {
   width: 25px;
   height: 25px;
+  min-width: 25px;
+  min-height: 25px;
 }
 
 .Task {
@@ -32,7 +31,7 @@
   font-size: 18px;
   color: #434343;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .TaskSelected {
